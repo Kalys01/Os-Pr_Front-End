@@ -2,7 +2,7 @@
 function Input(){
     i = 1;
     c = 0;
-    while (i < 6) {
+    while (i < 4) {
         login_ok = false;
         user_name = "";
         password = "";
@@ -19,11 +19,11 @@ function Input(){
         if (login_ok == false) {
             c = c + 1;
             console.clear();
-            console.log("You are login or password is wrong " + c);
+            console.log(`You are login or password is wrong ${c} times`);
             if (c == 3) {
                 console.clear();
-                console.log("You are login or password is wrong! Please reload the page.");
-                // break;
+                console.log("You are login or password is wrong! Please reload the page and log in again.");
+                break;
             }
         }
         i++;
