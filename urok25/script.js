@@ -23,7 +23,7 @@ function Input(){
             if (c == 3) {
                 console.clear();
                 console.log("You are login or password is wrong! Please reload the page.");
-                break;
+                // break;
             }
         }
         i++;
