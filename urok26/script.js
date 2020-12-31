@@ -5,6 +5,7 @@ let parag = document.getElementsByTagName('p');
 for (let i = 0; i < parag.length; i++){
     parag[i].style.color = colors[i];
     parag[i].style.fontSize = `${18 + i*4}px`;
+    console.log(`${parag[i].innerHTML} Color: ${colors[i]}; Size: ${18 + i*4}px`);
 }
 
 //Created HTML elements with loop "for" ;)
